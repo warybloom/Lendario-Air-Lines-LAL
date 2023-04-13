@@ -10,6 +10,9 @@
   text-transform: capitalize;
   transition: all 0.2s linear;
 }
+body {
+  background-color: #091477 !important;
+}
 
 .container {
   display: flex;

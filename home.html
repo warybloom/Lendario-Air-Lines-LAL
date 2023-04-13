@@ -22,7 +22,6 @@
 </head>
 
 <body>
-<div class="cor-backgroun-pagina">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -41,17 +40,16 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http://127.0.0.1:5500/Lendario-Air-Lines-LAL-master/formulario.html"></span> Sign Up</a>
+                        <a href="formulario.html"></span> Cadastrar</a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5500/Lendario-Air-Lines-LAL-master/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        <a href="login.html"> Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="wrapper-carousel">
-
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -61,7 +59,7 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            
+
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="salvador.webp" alt="Salvador" />
@@ -70,8 +68,8 @@
                         <p>Ida e volta de onde estiver <span>*</span> por apenas R$400</p>
                     </div>
                 </div>
-           
-            
+
+
                 <div class="item">
                     <img src="recife.jpg" alt="Recife" />
                     <div class="carousel-caption">
@@ -91,21 +89,44 @@
 
         </div>
     </div>
-    
-        <div class="best-selling-tickets ">
-            <h3>Passagens mais vendidas</h3>
-            <div class="container">
+
+    <div class="row ">
+        <div class="best-selling-tickets">
+
+            <h3 style="margin-left:33px">Compra rápida</h3>
+            <div class="container-fluid col-sm-12">
+                <div class="inputs-container ">
+                    <input placeholder="Partida" type="text" name="" id="">
+                    
+                    <span style="color:#fff" class="material-symbols-outlined">
+                        swap_horiz
+                    </span>
+                    <input placeholder="Destino" type="text" name="" id="">
+                </div>
+                <div class="inputs-container ">
+                <input placeholder="Data de ida" type="date" name="" id="">
+                <span style="color:#fff" class="material-symbols-outlined">
+                    calendar_month
+                </span>
+                <input placeholder="Data de volta" type="date" name="" id="">
+            </div>
+        </div>
+    </div>
+    </div>
 
 
-                <div class="col">
-                     <div class="col-sm-6 row-lg-4">
 
-                        <div class="col-sm-12 ticket-container bg-info">
-                            <div class=" col-sm-4 id-container">
-                                  <span>Voo</span>
-                                  <span class="id">78-895</h3>
-                         </div>
-                            <div class=" col-sm-4 info-container">
+    <div class="best-selling-tickets">
+        <h3>Passagens mais vendidas</h3>
+        <div class="container-fluid align-self-left">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="checkout.html" class="ticket-container">
+                        <div class="id-container">
+                            <span>Voo</span>
+                            <span class="id">78-895</h3>
+                        </div>
+                        <div class="info-container">
                             <div class="form-to-container">
                                 <span class="from">SSA</span>
                                 <i class="fa fa-plane"></i>
@@ -117,7 +138,7 @@
                                     <p class="schedule">30/03/2023 - 00:00 </p>
                                 </div>
                                 <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"   ></i>
+                                    <i class="fa fa-users" aria-hidden="true"></i>
                                     <p class="type">1ª classe</p>
                                 </div>
                                 <div class="seat-container">
@@ -128,20 +149,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-sm-4 price-container">
+                        <div class="price-container">
                             <span class="material-symbols-outlined">
                                 payments
                             </span>
-                            <a href="http://127.0.0.1:5501/forma%20de%20pagamento.html"><p class="price">R$ 850</p></a>
-                            
+                            <p>R$ 850</p>
                         </div>
-                    </div>
-                    <div class="col-sm-12 ticket-container bg-info">
-                        <div class=" col-sm-4 id-container">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="checkout.html" class="ticket-container">
+                        <div class="id-container">
                             <span>Voo</span>
                             <span class="id">78-895</h3>
                         </div>
-                        <div class=" col-sm-4 info-container">
+                        <div class="info-container">
                             <div class="form-to-container">
                                 <span class="from">SSA</span>
                                 <i class="fa fa-plane"></i>
@@ -150,7 +172,7 @@
                             <div class="schedule-seat-type-container">
                                 <div class="schedule-container">
                                     <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 09:00 </p>
+                                    <p class="schedule">30/03/2023 - 00:00 </p>
                                 </div>
                                 <div class="type-container">
                                     <i class="fa fa-users" aria-hidden="true"></i>
@@ -164,21 +186,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-sm-4 price-container">
+                        <div class="price-container">
                             <span class="material-symbols-outlined">
                                 payments
                             </span>
-                            <a href="http://127.0.0.1:5501/forma%20de%20pagamento.html" class="price"><p >R$ 400</p></a>
+                            <p>R$ 850</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-sm-6 row-lg-4">
-                    <div class="col-sm-12 ticket-container bg-info">
-                        <div class=" col-sm-4 id-container">
+                <div class="col-md-4">
+                    <a href="checkout.html" class="ticket-container">
+                        <div class="id-container">
                             <span>Voo</span>
                             <span class="id">78-895</h3>
                         </div>
-                        <div class=" col-sm-4 info-container">
+                        <div class="info-container">
                             <div class="form-to-container">
                                 <span class="from">SSA</span>
                                 <i class="fa fa-plane"></i>
@@ -187,7 +209,7 @@
                             <div class="schedule-seat-type-container">
                                 <div class="schedule-container">
                                     <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 09:00 </p>
+                                    <p class="schedule">30/03/2023 - 00:00 </p>
                                 </div>
                                 <div class="type-container">
                                     <i class="fa fa-users" aria-hidden="true"></i>
@@ -201,23 +223,55 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-sm-4 price-container">
+                        <div class="price-container">
                             <span class="material-symbols-outlined">
                                 payments
                             </span>
-                            <a href="http://127.0.0.1:5501/forma%20de%20pagamento.html"><p class="price">R$ 400</p></a>
+                            <p>R$ 850</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
+                <div class="col-md-4">
+                    <a href="checkout.html" class="ticket-container">
+                        <div class="id-container">
+                            <span>Voo</span>
+                            <span class="id">78-895</h3>
+                        </div>
+                        <div class="info-container">
+                            <div class="form-to-container">
+                                <span class="from">SSA</span>
+                                <i class="fa fa-plane"></i>
+                                <span class="from">REC</span>
+                            </div>
+                            <div class="schedule-seat-type-container">
+                                <div class="schedule-container">
+                                    <i class="fa fa-clock-o"></i>
+                                    <p class="schedule">30/03/2023 - 00:00 </p>
+                                </div>
+                                <div class="type-container">
+                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                    <p class="type">1ª classe</p>
+                                </div>
+                                <div class="seat-container">
+                                    <span class="material-symbols-outlined">
+                                        airline_seat_recline_normal
+                                    </span>
+                                    <p class="seat">32</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <span class="material-symbols-outlined">
+                                payments
+                            </span>
+                            <p>R$ 850</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    
-    <footer>
-        <h1>Aqui acaba a página</h1>
-    </footer>
-</div>
+
 </body>
 
 </html>
