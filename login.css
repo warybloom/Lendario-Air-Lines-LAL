@@ -1,20 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
-
 body {
-  margin: 0;
-  font-family: "Poppins" "Noto Sans", sans-serif;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  background: #0b1aa1 !important;
 }
 
 .main-login {
   width: 100vw;
-  height: 100vh;
-  background: #091477;
+  height: 80vh;
+  background: #0b1aa1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +13,6 @@ body {
 
 .left-login {
   width: 50vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +30,6 @@ body {
 
 .right-login {
   width: 50vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,6 +147,7 @@ button a {
   color: #fff;
   text-decoration: none;
 }
+
 @media only screen and (max-width: 950px) {
   .card-login {
     width: 85%;
