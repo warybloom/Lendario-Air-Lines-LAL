@@ -40,15 +40,45 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="formulario.html"></span> Cadastrar</a>
+                        <a href="login.html">Check-In</a>
                     </li>
                     <li>
-                        <a href="login.html"> Login</a>
+                        <a style="cursor: pointer;" data-toggle="modal" data-target="#myModal">Cancelamento</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html"></span>Cadastrar</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Cancelamento</h4>
+            </div>
+            <div class="modal-body">
+             <label for="id-passagem">Identificador da passagem</label>
+             <input type="text" id="id-passagem"/>
+             <br />
+             <label for="id-voo">Identificador do voo</label>
+             <input type="text" id="id-voo"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar passagem</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>  
     <div class="wrapper-carousel">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
