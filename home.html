@@ -40,15 +40,45 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="formulario.html"></span> Cadastrar</a>
+                        <a href="login.html">Check-In</a>
                     </li>
                     <li>
-                        <a href="login.html"> Login</a>
+                        <a style="cursor: pointer;" data-toggle="modal" data-target="#myModal">Cancelamento</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html"></span>Cadastrar</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Cancelamento</h4>
+            </div>
+            <div class="modal-body">
+             <label for="id-passagem">Identificador da passagem</label>
+             <input type="text" id="id-passagem"/>
+             <br />
+             <label for="id-voo">Identificador do voo</label>
+             <input type="text" id="id-voo"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar passagem</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>    
     <div class="wrapper-carousel">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -90,193 +120,155 @@
         </div>
     </div>
 
-    <div class="row ">
+    <div class="row">
+
+
+       
+            <div class="fast-selling-tickets">
+                <h3 style="margin-left:33px">Compra rápida</h3>
+                <div class="container-fluid col-md-12">
+                        <div class="form-group" style="display: flex; width: 100%; align-items: center; flex-direction: column; gap:10px; ">
+                            <div style="width: 85%;display: flex; flex-direction: row; align-items: center; justify-content:space-between; gap:15px;" >
+                                <div style="width:400px">
+                                    <label for="select-trecho">Trecho:</label>
+                                    <select class="form-control" name="select-trecho" id="select-trecho">
+                                        <option>Só ida ou só volta</option>
+                                        <option>Ida e volta</option>
+                                    </select>
+                                </div>
+                                <div style="width:400px">
+                                    <label for="partida">Partida:</label>
+                                    <input type="text" class="form-control" id="partida">
+                                </div>
+                                
+                                <div style="width:400px">
+                                    <label for="partida">Destino:</label>
+                                    <input type="text" class="form-control" id="partida">
+                                </div>
+                            </div>
+                            <div style="width: 85%;display: flex; flex-direction: row; align-items: end; justify-content:space-between; gap:15px;">
+                            
+                                <div style="width:400px">
+                                    <label for="data-ida">Data de Ida:</label>
+                                    <input type="date" class="form-control" id="data-ida">
+                                </div>
+                                <div style="width:400px">
+                                    <label for="data-retorno">Data de Retorno:</label>
+                                    <input type="date" class="form-control" id="data-retorno" >
+                                </div>
+                            </div>
+                            <button class="btn btn-primary search-button">Buscar Voos</button>
+                        </div>
+                    
+                </div>
+            </div>
+    </div>
+
+
+
         <div class="best-selling-tickets">
-
-            <h3 style="margin-left:33px">Compra rápida</h3>
-            <div class="container-fluid col-sm-12">
-                <div class="inputs-container ">
-                    <input placeholder="Partida" type="text" name="" id="">
-
-                    <span style="color:#fff" class="material-symbols-outlined">
-                        swap_horiz
-                    </span>
-                    <input placeholder="Destino" type="text" name="" id="">
-                </div>
-                <div class="inputs-container ">
-                    <input placeholder="Data de ida" type="date" name="" id="">
-                    <span style="color:#fff" class="material-symbols-outlined">
-                        calendar_month
-                    </span>
-                    <input placeholder="Data de volta" type="date" name="" id="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="best-selling-tickets">
-        <h3>Passagens mais vendidas</h3>
-        <div class="container-fluid align-self-left">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="checkout.html" class="ticket-container">
-                        <div class="id-container">
-                            <span>Voo</span>
-                            <span class="id">78-895</h3>
-                        </div>
-                        <div class="info-container">
-                            <div class="form-to-container">
-                                <span class="from">SSA</span>
-                                <i class="fa fa-plane"></i>
-                                <span class="from">REC</span>
+            <h3>Destinos populares</h3>
+            <div class="container-fluid align-self-left">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="checkout.html" class="popular-destinations">
+                            <div class="photo-container">
+                                <img src="salvador.webp" alt="salvador" >
                             </div>
-                            <div class="schedule-seat-type-container">
-                                <div class="schedule-container">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 00:00 </p>
+                            <div class="info-container">
+                                <div class="form-to-container">
+                                    <span class="from">REC</span>
+                                    <i class="fa fa-plane"></i>
+                                    <span class="from">SSA</span>
                                 </div>
-                                <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"></i>
-                                    <p class="type">1ª classe</p>
-                                </div>
-                                <div class="seat-container">
-                                    <span class="material-symbols-outlined">
-                                        airline_seat_recline_normal
-                                    </span>
-                                    <p class="seat">32</p>
-                                </div>
+                                
                             </div>
-                        </div>
-                        <div class="price-container">
-                            <span class="material-symbols-outlined">
-                                payments
-                            </span>
-                            <p>R$ 850</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="checkout.html" class="ticket-container">
-                        <div class="id-container">
-                            <span>Voo</span>
-                            <span class="id">78-895</h3>
-                        </div>
-                        <div class="info-container">
-                            <div class="form-to-container">
-                                <span class="from">SSA</span>
-                                <i class="fa fa-plane"></i>
-                                <span class="from">REC</span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="checkout.html" class="popular-destinations">
+                            <div class="photo-container">
+                                <img src="recife.jpg" alt="salvador" >
                             </div>
-                            <div class="schedule-seat-type-container">
-                                <div class="schedule-container">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 00:00 </p>
+                            <div class="info-container">
+                                <div class="form-to-container">
+                                    <span class="from">SSA</span>
+                                    <i class="fa fa-plane"></i>
+                                    <span class="from">REC</span>
                                 </div>
-                                <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"></i>
-                                    <p class="type">1ª classe</p>
+                               
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="checkout.html" class="popular-destinations">
+                            <div class="photo-container">
+                                <img src="fortaleza.jpg" alt="salvador" >
+                            </div>
+                            <div class="info-container">
+                                <div class="form-to-container">
+                                    <span class="from">SSA</span>
+                                    <i class="fa fa-plane"></i>
+                                    <span class="from">FOR</span>
                                 </div>
-                                <div class="seat-container">
-                                    <span class="material-symbols-outlined">
-                                        airline_seat_recline_normal
-                                    </span>
-                                    <p class="seat">32</p>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="checkout.html" class="popular-destinations">
+                            <div class="photo-container">
+                                <img src="salvador.webp" alt="salvador" >
+                            </div>
+                            <div class="info-container">
+                                <div class="form-to-container">
+                                    <span class="from">REC</span>
+                                    <i class="fa fa-plane"></i>
+                                    <span class="from">SSA</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="price-container">
-                            <span class="material-symbols-outlined">
-                                payments
-                            </span>
-                            <p>R$ 850</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="checkout.html" class="ticket-container">
-                        <div class="id-container">
-                            <span>Voo</span>
-                            <span class="id">78-895</h3>
-                        </div>
-                        <div class="info-container">
-                            <div class="form-to-container">
-                                <span class="from">SSA</span>
-                                <i class="fa fa-plane"></i>
-                                <span class="from">REC</span>
-                            </div>
-                            <div class="schedule-seat-type-container">
-                                <div class="schedule-container">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 00:00 </p>
-                                </div>
-                                <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"></i>
-                                    <p class="type">1ª classe</p>
-                                </div>
-                                <div class="seat-container">
-                                    <span class="material-symbols-outlined">
-                                        airline_seat_recline_normal
-                                    </span>
-                                    <p class="seat">32</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-container">
-                            <span class="material-symbols-outlined">
-                                payments
-                            </span>
-                            <p>R$ 850</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="checkout.html" class="ticket-container">
-                        <div class="id-container">
-                            <span>Voo</span>
-                            <span class="id">78-895</h3>
-                        </div>
-                        <div class="info-container">
-                            <div class="form-to-container">
-                                <span class="from">SSA</span>
-                                <i class="fa fa-plane"></i>
-                                <span class="from">REC</span>
-                            </div>
-                            <div class="schedule-seat-type-container">
-                                <div class="schedule-container">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 00:00 </p>
-                                </div>
-                                <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"></i>
-                                    <p class="type">1ª classe</p>
-                                </div>
-                                <div class="seat-container">
-                                    <span class="material-symbols-outlined">
-                                        airline_seat_recline_normal
-                                    </span>
-                                    <p class="seat">32</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-container">
-                            <span class="material-symbols-outlined">
-                                payments
-                            </span>
-                            <p>R$ 850</p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="container-fluid d-flex align-items-center justify-content-center text-center">
-        <h4>Somos a Lendário Air Lines</h4>
-        <h5>Fazemos questão de tornar sua viagem a mais lendária possível</h5>
-        <h5>CNPJ: 00.000.000/0000-01</h5>
-        <h5>E-mail: lendarioairlines@lendarioLAL.com.br</h5>
-        <h5>Telefone:(71) 98888-7777</h5>
-    </footer>
- </body>
+        <footer class="container-fluid d-flex align-items-center justify-content-center text-center">
+            <h4>Somos a Lendário Air Lines</h4>
+            <h5>Fazemos questão de tornar sua viagem a mais lendária possível</h5>
+            <h5>CNPJ: 00.000.000/0000-01</h5>
+            <h5>E-mail: lendarioairlines@lendarioLAL.com.br</h5>
+            <h5>Telefone:(71) 98888-7777</h5>
+        </footer>
+        <script>
+            var select = document.getElementById('select-trecho');
+
+             if(select.value === 'Só ida ou só volta'){
+                    var retornoDataInput = document.getElementById('data-retorno');
+                    
+                    retornoDataInput.setAttribute('disabled', 'disabled');
+                }
+                if(select.value === 'Ida e volta'){
+                    var retornoDataInput = document.getElementById('data-retorno');
+                    
+                    retornoDataInput.removeAttribute('disabled', 'disabled');
+                }
+    
+            select.addEventListener('change', function(){
+                
+                if(select.value === 'Só ida ou só volta'){
+                    var retornoDataInput = document.getElementById('data-retorno');
+                    
+                    retornoDataInput.setAttribute('disabled', 'disabled');
+                }
+                if(select.value === 'Ida e volta'){
+                    var retornoDataInput = document.getElementById('data-retorno');
+                    
+                    retornoDataInput.removeAttribute('disabled', 'disabled');
+                }
+            })
+
+
+        </script>
+</body>
+
 </html>
