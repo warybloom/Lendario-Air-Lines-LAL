@@ -49,19 +49,39 @@ img {
   margin: auto;
 }
 
-.ticket-container {
+.fast-selling-tickets {
+  width: 90%;
+  margin: auto;
+  background-color: cian;
+}
+
+.fast-selling-tickets h3 {
+  color: #fff;
+}
+
+.popular-destinations {
   display: flex;
-  height: 180px;
   cursor: pointer;
+  height: 340px;
   margin-bottom: 10px;
   border-radius: 20px;
   box-shadow: 2px 2px;
   border: 2px solid #000;
+  flex-direction: column;
   background-color: #ffffff !important;
 }
 
-.ticket-container:hover {
-  background-color: green;
+.photo-container {
+  width: 100%;
+}
+
+.photo-container img {
+  height: 240px;
+  width: 100%;
+  border-radius: 20px;
+}
+.popular-destinations:hover {
+  text-decoration: none;
 }
 
 .id-container {
@@ -78,14 +98,27 @@ img {
 }
 
 .info-container {
-  width: 33%;
   height: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  flex-direction: row;
   justify-content: space-around;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body label {
+  color: #000;
+}
+
+.modal-body input {
+  border: 1px solid;
+  border-color: #000;
 }
 
 .from-to-container {
@@ -176,7 +209,6 @@ img {
 
 .inputs-container {
   width: 100%;
-  height: 80px;
   display: flex;
   flex-direction: row;
   padding-left: 20px;
@@ -185,7 +217,6 @@ img {
   justify-content: space-around;
 }
 .form-group {
-  width: 80%;
 }
 
 .checkbox-inline {
@@ -200,25 +231,24 @@ img {
 }
 
 .inputs-fast-selling {
-  height: 50px;
   border-radius: 20px;
 }
 
-.material-symbols-outlined {
-}
-
 input {
-  width: 90%;
-  height: 40px;
   padding: 10px;
   border-radius: 20px;
 }
 
-.radio-inline input {
-  height: 20px;
-  margin-right: 20px;
-}
-
 label {
   color: #fff;
+  padding: 0;
+}
+
+label span {
+  margin-left: 30px;
+}
+
+.search-button {
+  height: 35px;
+  width: 180px;
 }
