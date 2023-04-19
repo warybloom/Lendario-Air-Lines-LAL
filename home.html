@@ -95,188 +95,215 @@
 
             <h3 style="margin-left:33px">Compra rápida</h3>
             <div class="container-fluid col-sm-12">
-                <div class="inputs-container ">
-                    <input placeholder="Partida" type="text" name="" id="">
+                <form>
 
-                    <span style="color:#fff" class="material-symbols-outlined">
-                        swap_horiz
-                    </span>
-                    <input placeholder="Destino" type="text" name="" id="">
-                </div>
-                <div class="inputs-container ">
-                    <input placeholder="Data de ida" type="date" name="" id="">
-                    <span style="color:#fff" class="material-symbols-outlined">
-                        calendar_month
-                    </span>
-                    <input placeholder="Data de volta" type="date" name="" id="">
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" value="somente-ida">
+                        <span>Ida</span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" value="">
+                        <span>
+                            Ida e volta
+                        </span>
+                    </label>
+
+
+                    <div class="inputs-container">
+                        <div class="form-group">
+                            <label for="partida">Partida:</label>
+                            <input type="text" class="form-control" id="partida">
+                        </div>
+                        <span style="color:#fff" class="material-symbols-outlined">
+                            swap_horiz
+                        </span>
+                        <div class="form-group">
+                            <label for="destino">Destino:</label>
+                            <input type="text" class="form-control" id="destino">
+                        </div>
+
+                    </div>
+                    <div class="inputs-container">
+                        <div class="form-group">
+                            <label for="data-ida">Data de Ida:</label>
+                            <input type="date" class="form-control" id="data-ida">
+                        </div>
+                        <span style="color:#fff" class="material-symbols-outlined">
+                            calendar_month
+                        </span>
+                        <div class="form-group">
+                            <label for="data-retorno">Data de Retorno:</label>
+                            <input type="date" class="form-control" id="data-retorno">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="best-selling-tickets">
+            <h3>Passagens mais vendidas</h3>
+            <div class="container-fluid align-self-left">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="checkout.html" class="ticket-container">
+                            <div class="id-container">
+                                <span>Voo</span>
+                                <span class="id">78-895</h3>
+                            </div>
+                            <div class="info-container">
+                                <div class="form-to-container">
+                                    <span class="from">SSA</span>
+                                    <i class="fa fa-plane"></i>
+                                    <span class="from">REC</span>
+                                </div>
+                                <div class="schedule-seat-type-container">
+                                    <div class="schedule-container">
+                                        <i class="fa fa-clock-o"></i>
+                                        <p class="schedule">30/03/2023 - 00:00 </p>
+                                    </div>
+                                    <div class="type-container">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                        <p class="type">1ª classe</p>
+                                    </div>
+                                    <div class="seat-container">
+                                        <span class="material-symbols-outlined">
+                                            airline_seat_recline_normal
+                                        </span>
+                                        <p class="seat">32</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <span class="material-symbols-outlined">
+                                    payments
+                                </span>
+                                <p>R$ 850</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="checkout.html" class="ticket-container">
+                            <div class="id-container">
+                                <span>Voo</span>
+                                <span class="id">78-895</h3>
+                            </div>
+                            <div class="info-container">
+                                <div class="form-to-container">
+                                    <span class="from">SSA</span>
+                                    <i class="fa fa-plane"></i>
+                                    <span class="from">REC</span>
+                                </div>
+                                <div class="schedule-seat-type-container">
+                                    <div class="schedule-container">
+                                        <i class="fa fa-clock-o"></i>
+                                        <p class="schedule">30/03/2023 - 00:00 </p>
+                                    </div>
+                                    <div class="type-container">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                        <p class="type">1ª classe</p>
+                                    </div>
+                                    <div class="seat-container">
+                                        <span class="material-symbols-outlined">
+                                            airline_seat_recline_normal
+                                        </span>
+                                        <p class="seat">32</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <span class="material-symbols-outlined">
+                                    payments
+                                </span>
+                                <p>R$ 850</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="checkout.html" class="ticket-container">
+                            <div class="id-container">
+                                <span>Voo</span>
+                                <span class="id">78-895</h3>
+                            </div>
+                            <div class="info-container">
+                                <div class="form-to-container">
+                                    <span class="from">SSA</span>
+                                    <i class="fa fa-plane"></i>
+                                    <span class="from">REC</span>
+                                </div>
+                                <div class="schedule-seat-type-container">
+                                    <div class="schedule-container">
+                                        <i class="fa fa-clock-o"></i>
+                                        <p class="schedule">30/03/2023 - 00:00 </p>
+                                    </div>
+                                    <div class="type-container">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                        <p class="type">1ª classe</p>
+                                    </div>
+                                    <div class="seat-container">
+                                        <span class="material-symbols-outlined">
+                                            airline_seat_recline_normal
+                                        </span>
+                                        <p class="seat">32</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <span class="material-symbols-outlined">
+                                    payments
+                                </span>
+                                <p>R$ 850</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="checkout.html" class="ticket-container">
+                            <div class="id-container">
+                                <span>Voo</span>
+                                <span class="id">78-895</h3>
+                            </div>
+                            <div class="info-container">
+                                <div class="form-to-container">
+                                    <span class="from">SSA</span>
+                                    <i class="fa fa-plane"></i>
+                                    <span class="from">REC</span>
+                                </div>
+                                <div class="schedule-seat-type-container">
+                                    <div class="schedule-container">
+                                        <i class="fa fa-clock-o"></i>
+                                        <p class="schedule">30/03/2023 - 00:00 </p>
+                                    </div>
+                                    <div class="type-container">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                        <p class="type">1ª classe</p>
+                                    </div>
+                                    <div class="seat-container">
+                                        <span class="material-symbols-outlined">
+                                            airline_seat_recline_normal
+                                        </span>
+                                        <p class="seat">32</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <span class="material-symbols-outlined">
+                                    payments
+                                </span>
+                                <p>R$ 850</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <footer class="container-fluid d-flex align-items-center justify-content-center text-center">
+            <h4>Somos a Lendário Air Lines</h4>
+            <h5>Fazemos questão de tornar sua viagem a mais lendária possível</h5>
+            <h5>CNPJ: 00.000.000/0000-01</h5>
+            <h5>E-mail: lendarioairlines@lendarioLAL.com.br</h5>
+            <h5>Telefone:(71) 98888-7777</h5>
+        </footer>
+</body>
 
-
-
-    <div class="best-selling-tickets">
-        <h3>Passagens mais vendidas</h3>
-        <div class="container-fluid align-self-left">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="checkout.html" class="ticket-container">
-                        <div class="id-container">
-                            <span>Voo</span>
-                            <span class="id">78-895</h3>
-                        </div>
-                        <div class="info-container">
-                            <div class="form-to-container">
-                                <span class="from">SSA</span>
-                                <i class="fa fa-plane"></i>
-                                <span class="from">REC</span>
-                            </div>
-                            <div class="schedule-seat-type-container">
-                                <div class="schedule-container">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 00:00 </p>
-                                </div>
-                                <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"></i>
-                                    <p class="type">1ª classe</p>
-                                </div>
-                                <div class="seat-container">
-                                    <span class="material-symbols-outlined">
-                                        airline_seat_recline_normal
-                                    </span>
-                                    <p class="seat">32</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-container">
-                            <span class="material-symbols-outlined">
-                                payments
-                            </span>
-                            <p>R$ 850</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="checkout.html" class="ticket-container">
-                        <div class="id-container">
-                            <span>Voo</span>
-                            <span class="id">78-895</h3>
-                        </div>
-                        <div class="info-container">
-                            <div class="form-to-container">
-                                <span class="from">SSA</span>
-                                <i class="fa fa-plane"></i>
-                                <span class="from">REC</span>
-                            </div>
-                            <div class="schedule-seat-type-container">
-                                <div class="schedule-container">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 00:00 </p>
-                                </div>
-                                <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"></i>
-                                    <p class="type">1ª classe</p>
-                                </div>
-                                <div class="seat-container">
-                                    <span class="material-symbols-outlined">
-                                        airline_seat_recline_normal
-                                    </span>
-                                    <p class="seat">32</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-container">
-                            <span class="material-symbols-outlined">
-                                payments
-                            </span>
-                            <p>R$ 850</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="checkout.html" class="ticket-container">
-                        <div class="id-container">
-                            <span>Voo</span>
-                            <span class="id">78-895</h3>
-                        </div>
-                        <div class="info-container">
-                            <div class="form-to-container">
-                                <span class="from">SSA</span>
-                                <i class="fa fa-plane"></i>
-                                <span class="from">REC</span>
-                            </div>
-                            <div class="schedule-seat-type-container">
-                                <div class="schedule-container">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 00:00 </p>
-                                </div>
-                                <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"></i>
-                                    <p class="type">1ª classe</p>
-                                </div>
-                                <div class="seat-container">
-                                    <span class="material-symbols-outlined">
-                                        airline_seat_recline_normal
-                                    </span>
-                                    <p class="seat">32</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-container">
-                            <span class="material-symbols-outlined">
-                                payments
-                            </span>
-                            <p>R$ 850</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="checkout.html" class="ticket-container">
-                        <div class="id-container">
-                            <span>Voo</span>
-                            <span class="id">78-895</h3>
-                        </div>
-                        <div class="info-container">
-                            <div class="form-to-container">
-                                <span class="from">SSA</span>
-                                <i class="fa fa-plane"></i>
-                                <span class="from">REC</span>
-                            </div>
-                            <div class="schedule-seat-type-container">
-                                <div class="schedule-container">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p class="schedule">30/03/2023 - 00:00 </p>
-                                </div>
-                                <div class="type-container">
-                                    <i class="fa fa-users" aria-hidden="true"></i>
-                                    <p class="type">1ª classe</p>
-                                </div>
-                                <div class="seat-container">
-                                    <span class="material-symbols-outlined">
-                                        airline_seat_recline_normal
-                                    </span>
-                                    <p class="seat">32</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-container">
-                            <span class="material-symbols-outlined">
-                                payments
-                            </span>
-                            <p>R$ 850</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="container-fluid d-flex align-items-center justify-content-center text-center">
-        <h4>Somos a Lendário Air Lines</h4>
-        <h5>Fazemos questão de tornar sua viagem a mais lendária possível</h5>
-        <h5>CNPJ: 00.000.000/0000-01</h5>
-        <h5>E-mail: lendarioairlines@lendarioLAL.com.br</h5>
-        <h5>Telefone:(71) 98888-7777</h5>
-    </footer>
- </body>
 </html>
